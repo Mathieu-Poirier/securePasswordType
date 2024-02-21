@@ -72,3 +72,10 @@ private static bool IsValid(string password)
 }
 
 ```
+
+## Use it for your project!
+
+No dependencies other than .NET 8.0 SDK
+
+- cd yourProjectFolder
+- .NET CLI: dotnet add package securePasswordType --version 1.0.0
