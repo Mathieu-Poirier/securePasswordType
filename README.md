@@ -38,6 +38,7 @@ Character Diversity: It must include at least:
 - One lowercase letter (a-z)
 - One digit (0-9)
 - One special character (e.g., !, @, #, $, etc.)
+No illegal characters such as white-spaces, backslashes, single or double quotes
 
 ## Example Usage
 
@@ -78,4 +79,4 @@ private static bool IsValid(string password)
 No dependencies other than .NET 8.0 SDK
 
 - cd yourProjectFolder
-- .NET CLI: dotnet add package securePasswordType --version 1.0.0
+- .NET CLI: dotnet add package securePasswordType --version 1.0.1
