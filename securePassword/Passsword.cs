@@ -22,7 +22,8 @@
         private static bool IsValid(string password)
         {
             // Check for minimum length of 8 characters and at least one alphanumeric character
-            return password.Length >= 12 && password.Any(ch => !char.IsLetterOrDigit(ch)) && password.Any(char.IsUpper) && password.Any(char.IsLower) && password.Any(char.IsDigit) && !password.Any(char.IsWhiteSpace);
+            return password.Length >= 12 && password.Any(ch => !char.IsLetterOrDigit(ch)) && password.Any(char.IsUpper) && password.Any(char.IsLower) && password.Any(char.IsDigit) && !password.Any(char.IsWhiteSpace) &&
+            password.Any(ch => !char.IsLetterOrDigit(ch) && ch != '\\' && ch != '"' && ch != '\'');
         }
     }
 }
